@@ -33,25 +33,25 @@ a{
     text-decoration: none;
     color: inherit;
 }
-header{
+.header{
     background-color: #24282f;
     padding-top: 30px;
 }
-.container{
+.container-header{
     max-width: 1094px;
     margin: auto;
     color: white;
 }
-header .logo{
+.container-header .logo{
     float: left;
 }
-header nav{
+.menu{
     float: right;
 }
 .clearflex{
     clear: both;
 }
-header nav ul li{
+.menu-li{
     display: inline-block;
     color: white;
     font-size: 11px;
@@ -59,7 +59,7 @@ header nav ul li{
     margin-right: 51px;
     font-family: 'Open Sans';
 }
-header nav ul li a:after{
+.menu-li a:after{
     content: "";
     display: block;
     width: 0;
@@ -68,36 +68,40 @@ header nav ul li a:after{
     margin-top: 29px;
     transition: 0.3s;
 }
-header nav ul li:hover a:after{
+.menu-li:hover a:after{
     width: 100%;
-
 }
 
 .bg {
-    background-image: url('../images/bg_02.jpg');
+    background-image: url('../images/bg.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     height: 225px;
 
 }
-section h1{
+.container-about-us{
+    max-width: 1094px;
+    margin: auto;
+    color: white;
+}
+ .about-us{
     font-size: 32px;
     padding-top: 72px;
     text-transform: uppercase;
     font-family: 'Raleway';
 }
-section p{
+ .info-about-us{
     font-size: 12px;
     padding-top: 12px;
     max-width: 628px;
     font-family: 'Open Sans';
 }
-.container_2{
+.container-management{
     max-width: 890px;
     margin: auto;
     padding-top:120px;
 }
-section h2{
+.title-management{
     font-size: 20px;
     color: #24282f;
     text-align: center;
@@ -105,7 +109,7 @@ section h2{
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
 }
-section h2:after{
+.container-management:after{
     content:"";
     display: block;
     margin: auto;
@@ -137,7 +141,6 @@ section h2:after{
 .socialnetworks{
     float: right;
     padding:  25px 3px 0px 0px;
-
 }
 
 .margin_none{
@@ -146,11 +149,11 @@ section h2:after{
 .flex{
     display: flex;
 }
-h3{
+.name-manager{
     text-transform: uppercase;
     font-size: 13px;
 }
-h4{
+.specialty-manager{
     color: #b5a263;
     font-size: 12px;
 }
@@ -174,7 +177,7 @@ h4{
     background: white;
 
 }
-.container_3{
+.container-carousel-client{
     max-width: 100%;
     height: 472px;
     margin: auto;
@@ -193,14 +196,14 @@ h4{
     font-family: 'Open Sans';
 
 }
-article h2{
+.client-say{
     font-size: 20px;
     color: #24282f;
     text-align: center;
     padding-bottom: 24px;
     text-transform: uppercase
 }
-article h2:after{
+.client-say:after{
     content:"";
     display: block;
     margin: auto;
@@ -217,14 +220,14 @@ article h2:after{
 .foto-mini{
    width: 100%;
 }
-article h3{
+.about-manager-name{
     text-transform: uppercase;
     font-size: 13px;
     color: #b5a263;
     text-align: center;
     padding-top: 36px;
 }
-article h4{
+.about-specialty-manager{
     font-size: 12px;
     text-align: center;
     color: black;
@@ -237,6 +240,7 @@ article h4{
     top: 100px;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
+    outline: none;
 }
 .owl-carousel .owl-nav button.owl-prev:before {
     content: "\f053";
@@ -247,28 +251,34 @@ article h4{
     top: 100px;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
+    outline: none;
 }
 .owl-carousel .owl-nav button.owl-next:before{
     content: "\f054";
 }
 
+.owl-carousel .owl-dots{
+    margin-right: 0;
+    margin-top: 10px;
+    text-align: center;
+}
 .owl-carousel button.owl-dot span{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     display: inline-block;
     background-color: gray;
     border-radius: 20px;
     margin-right: 10px;
+    text-align: center;
 }
 .owl-carousel button.owl-dot.active span{
      background-color: black;
- }
 
-.owl-carousel.owl-dots{
-    padding-top: 100px;
-    margin: auto!important;
+ }
+.owl-carousel .owl-dot.active{
+    outline: none;
 }
-.container_4{
+.container-info{
     height: 233px;
     background-color: #2b2f35;
     padding-top: 62px;
@@ -334,19 +344,19 @@ article h4{
     background-color: #b5a263;
     color: white;
 }
-.container_5{
+.container-footer{
     height: 52px;
     background-color: #24282f;
     border: solid 1px #42464c;
     padding: 0px 308px ;
 }
-.container_5 p{
+.container-footer p{
     font-size: 10px;
     color:#b5a263;
     float: left;
     padding-top: 20px;
 }
-.container_5 a{
+.container-footer a{
     float: right;
 
 }
@@ -365,4 +375,146 @@ article h4{
     background-color:#b5a263;
     color: white;
     transition: 0.3s
+}
+.icon_2> .fab{
+    text-align: center!important;
+}
+
+
+
+.container-accordion{
+    max-width: 1200px;
+    margin: auto;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    background-color: #fce7f2;
+    border-radius: 0;
+    color: #860da6;
+    border: none;
+}
+.ui-accordion .ui-accordion-header{
+    padding: 15px 0 15px 17px;
+    font-size: 22px;
+    outline: none;
+}
+.ui-accordion .ui-accordion-header:before{
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50px;
+    margin-right: 10px;
+    color:#860da6 ;
+    position: relative;
+    top: -5px;
+    background-color: #860da6;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    background-color: #fef5fa;
+}
+.ui-widget-content{
+    background-color: #fef5fa;
+}
+.ui-icon{
+    position: absolute;
+    right: 39px;
+    width: 27px;
+    height: 27px;
+    background-position: inherit;
+    background-image: none;
+    text-indent: 0;
+    text-align: right;
+    top: 21px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.ui-icon:before{
+    content: "\f054";
+}
+.ui-accordion .ui-accordion-header .ui-state-hover span{
+    background-image: none;
+}
+.ui-state-active .ui-icon, .ui-button:active .ui-icon{
+    transform: rotate(90deg);
+}
+.ui-dialog{
+    width: 100%!important;
+    max-width:750px!important;
+    padding: 0!important;
+    background-color: white;!important;
+    height: 602px!important;
+}
+.ui-draggable .ui-dialog-titlebar{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Raleway';
+    height: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ui-button .ui-icon {
+    background-image: none;
+}
+.container-your-email{
+    max-width: 580px;
+    width: 100%;
+    padding-top: 42px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.lable-input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.lable-input .lable-enter-your-email{
+    max-width: 140px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 54px;
+}
+.lable-input .input-enter-your-email{
+    width: 384px;
+    height: 62px;
+}
+.reset-password{
+    width: 528px;
+    height: 60px;
+    background-color: #d4d4d4;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.choice{
+    margin: 30px 0px;
+}
+
+.choice .or{
+    text-transform: uppercase;
+ }
+ .log-in-fc {
+     width: 528px;
+     height: 60px;
+     background-color: #557bcc;
+     display: inline-block;
+     padding: 20px 0px;
+     text-align: center;
+ }
+ .log-in-fc--a{
+     text-transform: uppercase;
+     color: white;
+ }
+.ui-widget-content .log-in-fc--a{
+    color: white;
+
+}
+.ui-widget-content.log-in-fc--a.fa.fas .far, .fal, .fab{
+    padding-right: 16px;
 }
