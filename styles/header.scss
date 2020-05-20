@@ -11,11 +11,17 @@ $FF_Raleway: 'Raleway', sans-serif;
   .container-header{
       img{
         margin: 0 0 30px 225px;
+        @include max-screen(1024px){
+          margin: 0 0 30px 150px;
+        }
         @include max-screen(992px){
           margin: 0 0 20px 180px ;
         }
         @include max-screen(768px){
           margin: 0 0 20px 120px;
+        }
+        @include max-screen(568px){
+          margin: 0 0 20px 60px;
         }
         @include max-screen(414px){
           margin: 0 0 20px 40px;
@@ -57,7 +63,7 @@ $FF_Raleway: 'Raleway', sans-serif;
   padding: 8px 0;
   transition: 0.2s ease-in-out;
   z-index: 99;
-  @include max-screen(414px){
+  @include max-screen(568px){
     right: 50px;
   }
 }
@@ -134,14 +140,20 @@ $FF_Raleway: 'Raleway', sans-serif;
   .container-about-us {
     margin: 0 0 0 225px;
     color: white;
+    @include max-screen(1024px){
+      margin: 0 0 0 150px;
+    }
     @include max-screen(992px){
       margin: 0 0 20px 180px ;
     }
     @include max-screen(768px){
       margin: 0 10px 20px 120px;
     }
+    @include max-screen(568px){
+      margin: 0 40px 20px 60px;
+    }
     @include max-screen(414px){
-      margin: 0 0 20px 40px;
+      margin: 0 40px 20px 40px;
     }
     .about-us {
       padding-top: 72px;

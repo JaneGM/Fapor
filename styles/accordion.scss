@@ -3,6 +3,7 @@ $FF_fontawesome:'Font Awesome 5 Free';
   max-width: 1200px;
   margin: 20px;
   padding: 15px;
+  margin: auto;
   @include max-screen(375px){
     margin: 10px;
     padding: 7px;

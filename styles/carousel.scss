@@ -9,7 +9,24 @@
   .container_carousel {
     max-width: 890px;
     margin: auto;
-
+    @include max-screen(812px){
+      max-width: 840px;
+    }
+    @include max-screen(768px){
+      max-width: 700px;
+      }
+    @include max-screen(568px){
+      max-width: 540px;
+    }
+    @include max-screen(414px){
+      max-width: 380px;
+    }
+    @include max-screen(375px){
+      max-width: 340px;
+    }
+    @include max-screen(320px){
+      max-width: 300px;
+    }
     .client-say {
       padding-bottom: 24px;
       text-align: center;
@@ -33,6 +50,21 @@
       max-width: 700px;
       margin: auto;
       text-align: center;
+      @include max-screen(768px){
+        max-width: 630px;
+      }
+      @include max-screen(568px){
+        max-width: 480px;
+      }
+      @include max-screen(414px){
+        max-width: 320px ;
+      }
+      @include max-screen(375px){
+        max-width: 320px;
+      }
+      @include max-screen(320px){
+        max-width: 260px;
+      }
       .for-foto{
         width: 72px;
         height: 72px;
